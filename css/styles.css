@@ -328,18 +328,33 @@ span {
     color: inherit;
 }
 
-.video-container p {
-    font-size: 1rem;
-}
-
 .video-container {
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.day-description-videos { 
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Hind', sans-serif;
+.video-wrapper {
+  flex: 1 0 calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.day-description-videos {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Hind', sans-serif;
 }
 
 .day-context {
@@ -384,4 +399,7 @@ span {
     margin: 0 50px;
   }
 
+  .video-wrapper {
+    flex: 1 0 100%;
+}
 }
