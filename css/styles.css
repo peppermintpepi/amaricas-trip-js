@@ -317,41 +317,6 @@ span {
   height: 150px;
 }
 
-@media (max-width: 1200px) {
-  .images-menu-container a {
-    flex: 1 0 calc(50% - 2px);
-    max-width: calc(50% - 2px);
-  }
-
-  .images-gallery img {
-    max-width: calc(50% - 2px);
-  }
-
-  .day-description {
-    margin: 0 100xp;
-  }
-}
-
-@media (max-width: 768px) {
-  .images-menu-container a {
-    flex: 1 0 calc(100% - 2px);
-    max-width: calc(100% - 2px);
-  }
-
-  .images-gallery img {
-    max-width: calc(100% - 2px);
-  }
-
-  .day-description {
-    margin: 0 50px;
-  }
-
-  .day-title h1 {
-    font-size: 1.5rem;
-    margin: 0 50px;
-  }
-}
-
 .main-menu {
     display: flex;
     justify-content: flex-end;
@@ -377,3 +342,46 @@ span {
     font-family: 'Hind', sans-serif;
 }
 
+.day-context {
+  font-size: 0.8rem;
+  margin: 0 200px;
+  font-family: 'Hind', sans-serif;
+  text-align: left;
+}
+
+
+@media (max-width: 1200px) {
+  .images-menu-container a {
+    flex: 1 0 calc(50% - 2px);
+    max-width: calc(50% - 2px);
+  }
+
+  .images-gallery img {
+    max-width: calc(50% - 2px);
+  }
+
+  .day-description, .day-context {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .images-menu-container a {
+    flex: 1 0 calc(100% - 2px);
+    max-width: calc(100% - 2px);
+  }
+
+  .images-gallery img {
+    max-width: calc(100% - 2px);
+  }
+
+  .day-description, .day-context {
+    margin: 0 50px;
+  }
+
+  .day-title h1 {
+    font-size: 1.5rem;
+    margin: 0 50px;
+  }
+
+}
